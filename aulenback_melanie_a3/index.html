@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/reset.css" rel="stylesheet" type="text/css" />
+    <link href="styles/general.css" rel="stylesheet" type="text/css" />
+    <link href="styles/index.css" rel="stylesheet" type="text/css" />
+    <link href="styles/art.css" rel="stylesheet" type="text/css" />
+    <link href="styles/shop.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="images/mmmlogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Oooh+Baby&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+    <div id="banner">
+        <header>
+            <nav class="defaultNav">
+                <div class="shp"><a href="shop.html" target="_blank">Shop</a></div>
+                <div class="at"><a href="art.html" target="_blank">Art</a></div>
+                <div class="ttl"><a href="index.html" target="_blank">
+                        <h1>MiniMelMedia</h1>
+                    </a>
+                </div>
+                <div class="inst">
+                    <a href="https://www.instagram.com/mini.mel.makes/" target="_blank"><img
+                            src="images/insta_logo.webp" alt="Instagram Logo" width="30px"></a>
+                </div>
+                <div class="insta">
+                    <a href="https://www.instagram.com/minimelmedia/" target="_blank"><img src="images/insta_logo.webp"
+                            alt="Instagram Logo" width="30px"></a>
+                </div>
+                <div class="yt">
+                    <a href="https://www.youtube.com/@minimelmedia1276" target="_blank"><img src="images/yt_logo.webp"
+                            alt="YouTube Logo" width="30px"></a>
+                </div>
+            </nav>
+            <nav class="mobileNav hidden">
+                <button onclick="toggleMenu()"></button>
+                <div><a href="index.html" target="_blank">
+                        <h1>MiniMelMedia</h1>
+                    </a>
+                </div>
+                <div id="menu" class="menu hidden">
+                    <div class="menuSpace"><a href="shop.html" target="_blank">Shop</a></div>
+                    <div class="menuSpace"><a href="art.html" target="_blank">Art</a></div>
+                    <div class="menuSpace">
+                        <a href="https://www.instagram.com/mini.mel.makes/" target="_blank"><img
+                                src="images/insta_logo.webp" alt="Instagram Logo" width="30px"></a>
+                    </div>
+                    <div class="menuSpace">
+                        <a href="https://www.instagram.com/minimelmedia/" target="_blank"><img
+                                src="images/insta_logo.webp" alt="Instagram Logo" width="30px"></a>
+                    </div>
+                    <div class="menuSpace">
+                        <a href="https://www.youtube.com/@minimelmedia1276" target="_blank"><img
+                                src="images/yt_logo.webp" alt="YouTube Logo" width="30px"></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <div class="content">
+        <div class="introindex">
+            <h2 class="centertext">Who Am I?</h2>
+            <hr>
+            <p class="intro">Hi there! I'm MiniMelMedia. I'm a YouTuber and an artist. My content consists of all things
+                art and more! I have song covers, animations, short films, tutorials, 3D modelling and more! On this
+                page, you'll find some of my YouTube videos. Be sure to check out my YouTube to see the rest! On the 'Art' page you"ll find some of my traditional art. On
+                the shop page, you'll learn about my upcoming small business! My socials and YouTube are linked at the
+                top and bottom of each page. Feel free to look around!</p>
+        </div>
+        <div class="videosmain">
+            <div class="songCovers">
+                <h3>Song Covers</h3>
+                <br>
+                <div class="carousel1">
+                    <div id="vid1">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/LQfi2UOM6DI?si=w_RAabJSb9paokGQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <img id="larr" class="la" src="images/left_arrow.png" alt="YouTube Logo" width="60px"
+                        onclick="toggleSongsLeftS()">
+                    <div id="vid2">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/w6iQt0MUoM0?si=QLDIVwp1Rhja6hzx"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div id="vid3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2UmO8IhzTJ8?si=ZJYCSrHLfA_aRm-X"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <img class="ra" src="images/right_arrow.webp" alt="YouTube Logo" width="60px"
+                        onclick="toggleSongsRightS()">
+                </div>
+            </div>
+            <div class="animations">
+                <h3>Animations</h3>
+                <br>
+                <div class="carousel1">
+                    <div id="vid4">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gpJ8_IBdQqI?si=rsMtjY4gKwwKciN7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <img class="la" src="images/left_arrow.png" alt="YouTube Logo" width="60px"
+                        onclick="toggleSongsLeftA()">
+                    <div id="vid5">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/iOpRog7eml0?si=qLT0a9SDaRaYjaaF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div id="vid6">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TsvVDwUw-wU?si=zQpDPK_sZjP5uXXJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <img class="ra" src="images/right_arrow.webp" alt="YouTube Logo" width="60px"
+                        onclick="toggleSongsRightA()">
+                </div>
+            </div>
+            <div class="modelling">
+                <h3>3D Modelling</h3>
+                <br>
+                <div class="carousel1">
+                    <div id="vid7">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/G9bpVgmG4G8?si=r80GE2lLeLv2QWv5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <img class="la" src="images/left_arrow.png" alt="YouTube Logo" width="60px"
+                        onclick="toggleSongsLeftM()">
+                    <div id="vid8">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/fMJcHsv53gE?si=HI3advLqiF-WULMT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <img class="ra" src="images/right_arrow.webp" alt="YouTube Logo" width="60px"
+                        onclick="toggleSongsRightM()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footerimg">
+        <footer>
+            <span class="cr">&copy;
+                MiniMelMedia2024
+            </span>
+            <div class="inst">
+                <a href="https://www.instagram.com/mini.mel.makes/" target="_blank"><img src="images/insta_logo.webp"
+                        alt="Instagram Logo" width="30px"></a>
+            </div>
+            <div class="insta">
+                <a href="https://www.instagram.com/minimelmedia/" target="_blank"><img src="images/insta_logo.webp"
+                        alt="Instagram Logo" width="30px"></a>
+            </div>
+            <div class="yt">
+                <a href="https://www.youtube.com/@minimelmedia1276" target="_blank"><img src="images/yt_logo.webp"
+                        alt="YouTube Logo" width="30px"></a>
+            </div>
+        </footer>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

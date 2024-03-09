@@ -1,0 +1,94 @@
+#banner {
+    background-image: url('../images/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40% 60%;
+    height: 350px;
+    width: 100%;
+}
+
+.content {
+    padding: 30px;
+    display: grid;
+    grid-template-areas: 
+    "introindex"
+    "videosmain";
+}
+
+.intro{
+    text-align: justify;
+    margin-top: 30px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.songs{
+    display: inline-block;
+    padding: 20px;
+}
+
+.footerimg{
+    background-image: url('../images/outropic.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+span{
+    color: white;
+    padding: 10px;
+    float: left;
+}
+
+.carousel1 {
+    display: grid;
+    grid-template-areas: 
+    "la vid ra";
+    justify-content: center;
+}
+
+.la {
+    grid-area: la;
+}
+
+.vid {
+    grid-area: vid;
+}
+
+.ra {
+    grid-area: ra;
+}
+
+#vid1 {
+    display: none;
+}
+
+#vid2 {
+    display: inline-block;
+}
+
+#vid3 {
+    display: none;
+}
+
+#vid4 {
+    display: none;
+}
+
+#vid5 {
+    display: inline-block;
+}
+
+#vid6 {
+    display: none;
+}
+
+#vid7 {
+    display: none;
+}
+
+#vid8 {
+    display: inline-block;
+}

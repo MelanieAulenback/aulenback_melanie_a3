@@ -1,0 +1,220 @@
+.bad-script-regular {
+    font-family: "Bad Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .oooh-baby-regular {
+    font-family: "Oooh Baby", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+p, h2, h3, h4, h5 {
+    font-family: "Bad Script", cursive;
+}
+
+h1 {
+    font-family: "Oooh Baby", cursive;
+    text-align: center;
+    font-size: 50px;
+    display: flex;
+    align-self: center;
+    padding: 10px;
+    padding-left: 400px;
+    padding-right: 300px;
+}
+
+/* header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: end;
+    align-items: center;
+    align-content: center;
+    justify-items: center; 
+    padding: 5px; 
+    grid-template-areas: 
+    "shp at . . ttl . . inst insta yt";
+    text-shadow:
+        0.07em 0 black,
+        0 0.0em black,
+        -0.0em 0 black,
+        0 -0.0em black;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.3);
+} */
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: end;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    padding: 5px;
+    grid-template-areas:
+        "shp at . . ttl . . inst insta yt";
+    text-shadow:
+        0.07em 0 black,
+        0 0.0em black,
+        -0.0em 0 black,
+        0 -0.0em black;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.shp {
+    grid-area: shp;
+}
+
+.at {
+    grid-area: at;
+}
+
+.ttl {
+    grid-area: ttl;      
+}
+
+.inst {
+    grid-area: inst;
+}
+
+.insta {
+    grid-area: insta;
+}
+
+.yt {
+    grid-area: yt;
+}
+
+.buttons {
+    display: flex;
+    padding: 20px;
+    margin-right: 0;
+    gap: 1px;
+}
+
+.logos {
+
+    padding: 20px;
+    margin-left: 0;
+    gap: 10px;
+}
+
+a {
+    font-size: 20px;
+    font-family: "Bad Script", cursive;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: rgb(151, 197, 209);
+}
+
+a:active {
+    color: rgb(211, 136, 180);
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+.centertext {
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 19px;
+}
+
+hr {
+    width: 40px;
+    height: 3px;
+    background-color: black;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr 1fr 1fr;
+    justify-content: end;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    padding: 5px;
+    grid-template-areas:
+        "cr . inst insta yt";
+    font-family: "Bad Script", cursive;
+}
+
+.intro {
+    text-align: justify;
+    padding: 30px;
+}
+
+.mobileNav {
+    animation: appear 1s;
+    display: none;
+
+    grid-template-areas:
+        ". ."
+        "menu menu";
+    justify-items: left;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    display: none;
+    cursor: pointer;
+}
+
+.menuSpace {
+    padding: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+    button {
+        display: inline-block;
+        background-image: url('../images/menu.png');
+        background-size: cover;
+        width: 60px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(8px);
+        box-shadow: 0 0 5px 10px rgba(0, 0, 0, 0.3);
+
+    }
+
+    .defaultNav {
+        display: none;
+    }
+
+    .mobileNav {
+        display: grid;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}

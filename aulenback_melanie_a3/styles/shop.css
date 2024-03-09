@@ -1,0 +1,154 @@
+.main{
+    padding: 30px;
+    display: grid;
+    grid-template-areas: 
+    "introshop"
+    "examples"
+    "steps";
+}
+
+h4{
+    text-align: center;
+    font-size: 70px;
+}
+
+.hrshop{
+    width: 200px;
+    height: 3px;
+    background-color: black;
+}
+
+p{
+    margin: 0 30%;
+    text-align: justify;
+    padding: 20px;
+}
+
+.examples{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    justify-content: end;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    padding: 20px;
+    grid-template-areas: 
+    "img1 img2 img3 img4"
+    "cp1 cp1 cp2 cp3";
+    background-color: whitesmoke;
+}
+
+.img1{
+    grid-area: img1;
+}
+
+.img2{
+    grid-area: img2;
+}
+
+.img3{
+    grid-area: img3;
+}
+
+.img4{
+    grid-area: img4;
+}
+
+.cp1{
+    grid-area: cp1;
+}
+
+.cp2{
+    grid-area: cp2;
+}
+
+.cp3{
+    grid-area: cp3;
+}
+
+.hrsteps{
+    margin: 5px;
+    width: 40px;
+    height: 3px;
+    background-color: black;
+    grid-area: hrsteps;
+}
+
+.steps{
+    padding: 20px;
+}
+
+.steps{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto 1fr 1fr;
+    /* justify-content: end;
+    align-items: center;
+    align-content: center;
+    justify-items: center; */
+    padding: 20px;
+    grid-template-areas: 
+    "stepst ."
+    "hrsteps ."
+    "step1 stepimg1"
+    "step2 stepimg2"
+    "step3 stepimg3";
+    background-color: white;
+}
+
+.step1{
+    grid-area: step1;
+    text-align: left;
+}
+
+.step2{
+    grid-area: step2;
+    text-align: left;
+}
+
+.step3{
+    grid-area: step3;
+    text-align: left;
+}
+
+.stepimg1{
+    grid-area: stepimg1;
+}
+
+.stepimg2{
+    grid-area: stepimg2;
+}
+
+.stepimg3{
+    grid-area: stepimg3;
+}
+
+.stepst{
+    grid-area: stepst;
+}
+
+.footerShop {
+    color: black;
+}
+
+@media screen and (max-width: 1400px) {
+    .examples{
+        display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+        grid-template-areas: 
+        "img3 img4"
+        "cp2 cp3"
+        "img1 img2"
+        "cp1 cp1";
+        justify-content: end;
+        align-items: center;
+    align-content: center;
+    justify-items: center;
+    }
+
+       /* .img1, .img2, .cp1 {
+        grid-column: span 2;
+    } */
+}
